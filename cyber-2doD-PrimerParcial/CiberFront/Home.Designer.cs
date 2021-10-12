@@ -29,20 +29,12 @@ namespace CiberFront
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.FormHome = new ReaLTaiizor.Forms.ForeverForm();
-=======
-            this.formHome = new ReaLTaiizor.Forms.ForeverForm();
-            this.poisonDateTime1 = new ReaLTaiizor.Controls.PoisonDateTime();
->>>>>>> master
             this.bttnAlta = new ReaLTaiizor.Controls.ForeverButton();
             this.tabHome = new ReaLTaiizor.Controls.ForeverTabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.grpBxEsperaComputadora = new ReaLTaiizor.Controls.ParrotGroupBox();
-<<<<<<< HEAD
             this.lstBxClientesEspera = new ReaLTaiizor.Controls.ForeverListBox();
-=======
->>>>>>> master
             this.grpBxComputadoras = new ReaLTaiizor.Controls.ParrotGroupBox();
             this.puesto_C10_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
             this.puesto_C09_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
@@ -55,7 +47,6 @@ namespace CiberFront
             this.puesto_C02_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
             this.puesto_C01_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-<<<<<<< HEAD
             this.parrotGroupBox2 = new ReaLTaiizor.Controls.ParrotGroupBox();
             this.foreverListBox1 = new ReaLTaiizor.Controls.ForeverListBox();
             this.parrotGroupBox1 = new ReaLTaiizor.Controls.ParrotGroupBox();
@@ -103,47 +94,10 @@ namespace CiberFront
             this.FormHome.Text = "Home";
             this.FormHome.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.FormHome.TextLight = System.Drawing.Color.SeaGreen;
-=======
-            this.formHome.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpBxComputadoras.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // formHome
-            // 
-            this.formHome.BackColor = System.Drawing.Color.White;
-            this.formHome.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
-            this.formHome.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.formHome.Controls.Add(this.poisonDateTime1);
-            this.formHome.Controls.Add(this.bttnAlta);
-            this.formHome.Controls.Add(this.tabHome);
-            this.formHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formHome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.formHome.ForeverColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.formHome.HeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.formHome.HeaderMaximize = false;
-            this.formHome.HeaderTextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.formHome.Image = null;
-            this.formHome.Location = new System.Drawing.Point(0, 0);
-            this.formHome.MinimumSize = new System.Drawing.Size(210, 50);
-            this.formHome.Name = "formHome";
-            this.formHome.Padding = new System.Windows.Forms.Padding(1, 51, 1, 1);
-            this.formHome.Sizable = true;
-            this.formHome.Size = new System.Drawing.Size(1285, 692);
-            this.formHome.TabIndex = 0;
-            this.formHome.Text = "Home";
-            this.formHome.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.formHome.TextLight = System.Drawing.Color.SeaGreen;
-            // 
-            // poisonDateTime1
-            // 
-            this.poisonDateTime1.Location = new System.Drawing.Point(1067, 54);
-            this.poisonDateTime1.MinimumSize = new System.Drawing.Size(4, 29);
-            this.poisonDateTime1.Name = "poisonDateTime1";
-            this.poisonDateTime1.Size = new System.Drawing.Size(214, 29);
-            this.poisonDateTime1.TabIndex = 1;
->>>>>>> master
             // 
             // bttnAlta
             // 
@@ -151,7 +105,6 @@ namespace CiberFront
             this.bttnAlta.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.bttnAlta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bttnAlta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.bttnAlta.Location = new System.Drawing.Point(1075, 109);
             this.bttnAlta.Name = "bttnAlta";
             this.bttnAlta.Rounded = false;
@@ -160,15 +113,6 @@ namespace CiberFront
             this.bttnAlta.Text = "Alta";
             this.bttnAlta.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.bttnAlta.Click += new System.EventHandler(this.bttnAlta_Click);
-=======
-            this.bttnAlta.Location = new System.Drawing.Point(1153, 139);
-            this.bttnAlta.Name = "bttnAlta";
-            this.bttnAlta.Rounded = false;
-            this.bttnAlta.Size = new System.Drawing.Size(120, 40);
-            this.bttnAlta.TabIndex = 1;
-            this.bttnAlta.Text = "Alta";
-            this.bttnAlta.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
->>>>>>> master
             // 
             // tabHome
             // 
@@ -204,10 +148,7 @@ namespace CiberFront
             // 
             this.grpBxEsperaComputadora.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.grpBxEsperaComputadora.BorderWidth = 1;
-<<<<<<< HEAD
             this.grpBxEsperaComputadora.Controls.Add(this.lstBxClientesEspera);
-=======
->>>>>>> master
             this.grpBxEsperaComputadora.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.grpBxEsperaComputadora.Location = new System.Drawing.Point(513, 17);
             this.grpBxEsperaComputadora.Name = "grpBxEsperaComputadora";
@@ -218,12 +159,10 @@ namespace CiberFront
             this.grpBxEsperaComputadora.Text = "Espera Computadoras";
             this.grpBxEsperaComputadora.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             // 
-<<<<<<< HEAD
             // lstBxClientesEspera
             // 
             this.lstBxClientesEspera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.lstBxClientesEspera.items = new string[] {
-        ""};
+            this.lstBxClientesEspera.items = new string[] {""};
             this.lstBxClientesEspera.Location = new System.Drawing.Point(19, 33);
             this.lstBxClientesEspera.Name = "lstBxClientesEspera";
             this.lstBxClientesEspera.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
@@ -231,8 +170,6 @@ namespace CiberFront
             this.lstBxClientesEspera.TabIndex = 1;
             this.lstBxClientesEspera.Text = "foreverListBox1";
             // 
-=======
->>>>>>> master
             // grpBxComputadoras
             // 
             this.grpBxComputadoras.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
@@ -400,11 +337,8 @@ namespace CiberFront
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
-<<<<<<< HEAD
             this.tabPage2.Controls.Add(this.parrotGroupBox2);
             this.tabPage2.Controls.Add(this.parrotGroupBox1);
-=======
->>>>>>> master
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -412,7 +346,6 @@ namespace CiberFront
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Puestos Cabinas";
             // 
-<<<<<<< HEAD
             // parrotGroupBox2
             // 
             this.parrotGroupBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
@@ -431,8 +364,7 @@ namespace CiberFront
             // foreverListBox1
             // 
             this.foreverListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.foreverListBox1.items = new string[] {
-        ""};
+            this.foreverListBox1.items = new string[] {""};
             this.foreverListBox1.Location = new System.Drawing.Point(19, 33);
             this.foreverListBox1.Name = "foreverListBox1";
             this.foreverListBox1.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
@@ -604,24 +536,17 @@ namespace CiberFront
             this.thunderGroupBox10.TabIndex = 1;
             this.thunderGroupBox10.Text = "C01_001";
             // 
-=======
->>>>>>> master
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1285, 692);
-<<<<<<< HEAD
             this.Controls.Add(this.FormHome);
-=======
-            this.Controls.Add(this.formHome);
->>>>>>> master
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
-<<<<<<< HEAD
             this.FormHome.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -632,13 +557,6 @@ namespace CiberFront
             this.tabPage2.ResumeLayout(false);
             this.parrotGroupBox2.ResumeLayout(false);
             this.parrotGroupBox1.ResumeLayout(false);
-=======
-            this.formHome.ResumeLayout(false);
-            this.tabHome.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.grpBxComputadoras.ResumeLayout(false);
-            this.grpBxComputadoras.PerformLayout();
->>>>>>> master
             this.ResumeLayout(false);
 
         }
