@@ -564,5 +564,6 @@ namespace CiberFront
         private ReaLTaiizor.Controls.ForeverCheckBox chckBxIcq;
         private ReaLTaiizor.Controls.ForeverCheckBox chckBxMessenger;
         private ReaLTaiizor.Controls.ForeverCheckBox chckBxOffice;
-    }
+
+        }
 }

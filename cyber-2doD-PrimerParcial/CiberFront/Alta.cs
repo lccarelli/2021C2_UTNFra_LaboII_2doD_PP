@@ -7,22 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Biblioteca;
 
 namespace CiberFront
 {
-    public partial class Home : Form
+    public partial class Alta : Form
     {
-        public Home()
+        public Alta()
         {
             InitializeComponent();
         }
-
-        private void bttnAlta_Click(object sender, EventArgs e)
-        {
-            Alta alta = new Alta();
-            alta.Show();
-        }
-
     }
 }
