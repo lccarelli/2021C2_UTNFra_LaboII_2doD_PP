@@ -88,7 +88,6 @@ namespace Biblioteca
                     )
             };
         }
-<<<<<<< HEAD
 
         public List<Cliente> datosListaClientes() 
         {
@@ -106,7 +105,5 @@ namespace Biblioteca
                 new Cliente( "Phil", "Collins", "35916836", 21),
             };
         }
-=======
->>>>>>> master
     }
 }
