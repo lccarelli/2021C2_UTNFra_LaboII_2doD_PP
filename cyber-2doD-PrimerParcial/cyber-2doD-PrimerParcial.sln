@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{03CF17FC-CA0D-473D-A4D1-498ECFFC5A2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiberFront", "CiberFront\CiberFront.csproj", "{F4F3C6C9-71AB-4A45-9D52-5440BD41F870}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CiberFront", "CiberFront\CiberFront.csproj", "{F4F3C6C9-71AB-4A45-9D52-5440BD41F870}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

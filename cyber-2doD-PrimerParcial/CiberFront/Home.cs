@@ -18,11 +18,19 @@ namespace CiberFront
             InitializeComponent();
         }
 
-        private void bttnAlta_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            Alta alta = new Alta();
-            alta.Show();
+            lstBoxEsperaComputadora.Items.Add("laura");
+            llstBoxEsperaTelefono.Items.Add("Nelida");
+
+            label1.Text = "Laura";
+            
         }
 
+        private void bttnAlta_Click(object sender, EventArgs e)
+        {
+            Alta formAlta = new Alta();
+            formAlta.Show();
+        }
     }
 }

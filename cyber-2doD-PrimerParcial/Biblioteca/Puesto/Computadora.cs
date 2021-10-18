@@ -6,6 +6,7 @@ namespace Biblioteca
 {
     public class Computadora : Puesto
     {
+        private const float FRACCION_MINIMA = 0.5F;
         private List<Software> softwares;
         private List<Periferico> perifericos;
         private List<Juego> juegos;
@@ -14,45 +15,36 @@ namespace Biblioteca
         public List<Periferico> Perifericos { get => perifericos; }
         public List<Juego> Juegos { get => juegos; }
 
-        public enum Software
-        {
-            OFFICE,
-            MESSENGER,
-            ICQ,
-            ARES
-        }
-
-        public enum Periferico
-        {
-            CAMARA,
-            AURICULARES,
-            MICROFONO
-        }
-
-        public enum Juego
-        {
-            DIABLO,
-            LINEAGE,
-            COUNTER_STRIKE,
-            SIMS
-        }
-
         public Computadora(string id) : base(id)
         {
-            softwares = new List<Software>();
-            perifericos = new List<Periferico>();
-            juegos = new List<Juego>();
+            this.tipoPuesto = TipoPuesto.COMPUTADORA;
+            this.softwares = new List<Software>();
+            this.perifericos = new List<Periferico>();
+            this.juegos = new List<Juego>();
 
         }
 
-        public Computadora(string id, List<Software> softwares, List<Periferico> perifericos, List<Juego> juegos)
+        public Computadora(string id,List<Software> softwares, List<Periferico> perifericos, List<Juego> juegos)
             : base(id)
         {
             this.identificaficador = id;
-            this.tipo = Tipo.COMPUTADORA;
             this.softwares = softwares;
             this.perifericos = perifericos;
             this.juegos = juegos;
+        }
+
+        public Computadora(List<Software> softwares, List<Periferico> perifericos, List<Juego> juegos) : this("")
+        {
+            this.softwares = softwares;
+            this.perifericos = perifericos;
+            this.juegos = juegos;
+        }
+
+
+
+        public override Double CalcularCosto() 
+        {
+            return 0.6;
         }
 
         public static bool operator ==(Computadora instalados, Computadora alquiler)
@@ -63,7 +55,7 @@ namespace Biblioteca
 
             foreach (Software item in alquiler.softwares)
             {
-                if (EncontrarLibre(instalados, item)) 
+                if (EncontrarCaracteristica(instalados, item)) 
                 {
                     softwareEncontrado = true;
                 }
@@ -71,7 +63,7 @@ namespace Biblioteca
 
             foreach (Periferico item in alquiler.perifericos)
             {
-                if (EncontrarLibre(instalados, item))
+                if (EncontrarCaracteristica(instalados, item))
                 {
                     perifericoEncontrado = true;
                 }
@@ -79,7 +71,7 @@ namespace Biblioteca
 
             foreach (Juego item in alquiler.juegos)
             {
-                if (EncontrarLibre(instalados, item))
+                if (EncontrarCaracteristica(instalados, item))
                 {
                     juegoEncontrado = true;
                 }
@@ -98,7 +90,7 @@ namespace Biblioteca
             return !(instalados == alquiler);
         }
 
-        private static bool EncontrarLibre(Computadora computadores, Software softwareBuscado) 
+        private static bool EncontrarCaracteristica(Computadora computadores, Software softwareBuscado) 
         {
             foreach (Software item in computadores.softwares)
             {
@@ -110,7 +102,7 @@ namespace Biblioteca
             return false;
         }
 
-        private static bool EncontrarLibre(Computadora computadores, Periferico perifericoBuscado)
+        private static bool EncontrarCaracteristica(Computadora computadores, Periferico perifericoBuscado)
         {
             foreach (Periferico item in computadores.perifericos)
             {
@@ -122,7 +114,7 @@ namespace Biblioteca
             return false;
         }
 
-        private static bool EncontrarLibre(Computadora computadores, Juego juegoBuscado)
+        private static bool EncontrarCaracteristica(Computadora computadores, Juego juegoBuscado)
         {
             foreach (Juego item in computadores.juegos)
             {
