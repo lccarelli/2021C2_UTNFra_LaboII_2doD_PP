@@ -8,13 +8,13 @@ namespace Biblioteca
     {
         private static List<Puesto> listaPuestos;
         private static Queue<Cliente> colaClientesEspera;
-
-
+        private static List<Puesto> listaPuestosLibre;
 
         static Gestion()
         {
             listaPuestos = new List<Puesto>();
             colaClientesEspera = new Queue<Cliente>();
+            listaPuestosLibre = new List<Puesto>();
         }
 
         public static List<Puesto> ListaPuestos 
@@ -22,6 +22,14 @@ namespace Biblioteca
             get 
             {
                 return listaPuestos;
+            }
+        }
+
+        public static List<Puesto> ListaPuestosLibres
+        {
+            get 
+            {
+                return ListaPuestosLibres;
             }
         }
 
@@ -57,15 +65,17 @@ namespace Biblioteca
             return false;
         }
 
-        public static void AsignarPuesto(Puesto puesto) 
+        public static void AsignarPuesto() 
         {
-            if (ListarPuestosLibres().Count > 0 && puesto is not null) 
+            if (ListarPuestosLibres().Count > 0) 
             {
+                Cliente cliente = colaClientesEspera.Peek();
+
                 foreach (Puesto item in ListarPuestosLibres())
                 {
-                    if (puesto.TipoPuesto == item.TipoPuesto) 
+                    if (cliente.TipoPuesto == item.TipoPuesto) 
                     {
-                        puesto.IniciarSesion();
+                        item.IniciarSesion();
                         colaClientesEspera.Dequeue();
                     }
                 }
@@ -86,18 +96,16 @@ namespace Biblioteca
         /// </summary>
         /// <returns>Lista de puestos en estado LIBRE</returns>
         private static  List<Puesto> ListarPuestosLibres() 
-        {
-            List<Puesto> listaPuestosLibres = new List<Puesto>();
-
+        { 
             foreach (Puesto item in ListaPuestos)
             {
                 if (item.Estado is Estado.LIBRE) 
                 {
-                    listaPuestosLibres.Add(item);
+                    listaPuestosLibre.Add(item);
                 }
             }
 
-            return listaPuestosLibres;
+            return listaPuestosLibre;
         }
 
 

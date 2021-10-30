@@ -40,11 +40,15 @@ namespace Biblioteca
             this.numero = numero;
         }
 
-        public override Double CalcularCosto()
+        public override int CalcularDuracion()
         {
-            return 0.12;
+            return (int)(horaFin - horaInicio).TotalSeconds;
         }
 
+        public override Double CalcularCosto()
+        {
+            return ((float)Math.Ceiling(CalcularDuracion() / 30F));
+        }
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

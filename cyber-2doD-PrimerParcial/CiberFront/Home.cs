@@ -16,13 +16,12 @@ namespace CiberFront
         public Home()
         {
             InitializeComponent();
+            InicializarPuestos();
+            InicializarClientesEspera();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            InicializarPuestos();
-            lstBoxEsperaComputadora.Items.Add("laura");
-            llstBoxEsperaTelefono.Items.Add("Nelida");
 
             lblPuesto_C01_001.Text = "Laura";
         }
@@ -46,6 +45,14 @@ namespace CiberFront
             }
         }
 
+        private void InicializarClientesEspera() 
+        {
+            foreach (Cliente c in Datos.GenerarListaClientes()) 
+            {
+                Gestion.ColocarClienteAEspera(c);
+            }
+        }
+
         private void MostrarClienteEspera() 
         {
             foreach (Cliente item in Gestion.ColaClientesEspera)
@@ -57,6 +64,11 @@ namespace CiberFront
         private void Home_Activated(object sender, EventArgs e)
         {
             MostrarClienteEspera();
+        }
+
+        private void bttnAsignarPuesto_Click(object sender, EventArgs e)
+        {
+            Gestion.AsignarPuesto();   
         }
     }
 }

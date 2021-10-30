@@ -18,6 +18,7 @@ namespace Biblioteca
         public Puesto(string identificador) 
         {
             this.identificaficador = identificador;
+            this.estado = Estado.LIBRE;
         }
 
         public void IniciarSesion()
@@ -32,7 +33,7 @@ namespace Biblioteca
             this.horaFin = DateTime.Now;
         }
 
-
+        public abstract int CalcularDuracion();
         public abstract Double CalcularCosto();
 
         public static bool operator ==(Puesto puesto1, Puesto puesto2)

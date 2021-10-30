@@ -41,11 +41,14 @@ namespace Biblioteca
             this.juegos = juegos;
         }
 
-
+        public override int CalcularDuracion()
+        {
+            return (int)(horaFin - horaInicio).TotalSeconds;
+        }
 
         public override Double CalcularCosto() 
         {
-            return 0.6;
+            return ((float)Math.Ceiling(CalcularDuracion() / 30F) * FRACCION_MINIMA);
         }
 
         public static bool operator ==(Computadora instalados, Computadora alquiler)

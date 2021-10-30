@@ -107,7 +107,7 @@ namespace Biblioteca
         public static string Mostrar(Cliente cliente) 
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0} {1}", cliente.Apellido, cliente.Nombre);
+            sb.AppendFormat("{0}, {1} -> Puesto: {2}", cliente.Apellido, cliente.Nombre, cliente.TipoPuesto);
             return sb.ToString();
         }
     }
