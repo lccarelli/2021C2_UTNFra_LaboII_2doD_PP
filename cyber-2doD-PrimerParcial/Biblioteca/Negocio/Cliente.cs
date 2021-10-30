@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using System.Text;
 
 namespace Biblioteca
 {
@@ -11,7 +12,6 @@ namespace Biblioteca
         private int edad;
         private TipoPuesto tipoPuesto;
         public Computadora computadora;
-        public Telefono telefono;
 
         public Cliente(
                         string nombre, 
@@ -21,8 +21,7 @@ namespace Biblioteca
                         List<string> softwares, 
                         List<string> perifericos, 
                         List<string> juegos, 
-                        TipoPuesto tipoPuesto,
-                        Telefono telefono
+                        TipoPuesto tipoPuesto
             )
         {
             this.nombre = nombre;
@@ -31,7 +30,6 @@ namespace Biblioteca
             this.edad = (int)dEdad;
             this.computadora = new Computadora(ValidarSoftware(softwares), ValidarPeriferico(perifericos), ValidarJuego(juegos));
             this.TipoPuesto = tipoPuesto;
-            this.telefono = telefono;
         }
 
         public string Nombre { get => nombre; set => nombre = value; }
@@ -40,6 +38,20 @@ namespace Biblioteca
         public int Edad { get => edad; set => edad = value; }
         public TipoPuesto TipoPuesto { get => tipoPuesto; set => tipoPuesto = value; }
 
+        public static bool operator ==(Cliente cliente1, Cliente cliente2)
+        {
+            if (cliente1 is not null && cliente2 is not null) 
+            {
+                return cliente1.Dni == cliente2.Dni;
+            }
+
+            return false;
+        }
+
+        public static bool operator !=(Cliente cliente1, Cliente cliente2)
+        {
+            return !(cliente1 == cliente2);
+        }
 
         private List<Software> ValidarSoftware(List<string> software) 
         {
@@ -92,5 +104,11 @@ namespace Biblioteca
             return !int.TryParse(strDNI, out int dni) || strDNI is null ? 0 : dni;
         }
 
+        public static string Mostrar(Cliente cliente) 
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("{0} {1}", cliente.Apellido, cliente.Nombre);
+            return sb.ToString();
+        }
     }
 }

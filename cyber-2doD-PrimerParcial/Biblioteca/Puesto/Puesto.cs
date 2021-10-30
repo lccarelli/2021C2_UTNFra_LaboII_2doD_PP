@@ -9,25 +9,29 @@ namespace Biblioteca
         protected string identificaficador;
         protected DateTime horaInicio;
         protected DateTime horaFin;
-        protected TipoPuesto tipoPuesto;
-        protected Estado estado;
+        private TipoPuesto tipoPuesto;
+        private Estado estado;
+
+        public TipoPuesto TipoPuesto { get => tipoPuesto; set => tipoPuesto = value; }
+        public Estado Estado { get => estado; set => estado = value; }
 
         public Puesto(string identificador) 
         {
             this.identificaficador = identificador;
         }
 
-        private void IniciarSesion()
+        public void IniciarSesion()
         {
             this.estado = Estado.EN_USO;
             this.horaInicio = DateTime.Now;
         }
 
-        private void FinalizarSesion()
+        public void FinalizarSesion()
         {
             this.estado = Estado.LIBRE;
             this.horaFin = DateTime.Now;
         }
+
 
         public abstract Double CalcularCosto();
 

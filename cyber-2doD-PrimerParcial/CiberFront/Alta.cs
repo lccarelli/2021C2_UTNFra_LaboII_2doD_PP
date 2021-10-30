@@ -14,18 +14,19 @@ namespace CiberFront
 
         private void bttnAceptar_Click(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente(
-                                            txtBxNombre.Text, 
-                                            txtBxApellido.Text, 
-                                            txtBxDNI.Text, 
-                                            nmrcEdad.Value, BuscarSoftwares(), 
-                                            BuscarPerifericos(), 
-                                            BuscarJuegos(), 
-                                            BuscarTipoPuesto(),
-                                            new Telefono(txtBxArea.Text,
-                                            txtBxPrefijo.Text,
-                                            txtBxNumero.Text)
-                                            );
+            if (Gestion.ColocarClienteAEspera(new Cliente(
+                                            txtBxNombre.Text,
+                                            txtBxApellido.Text,
+                                            txtBxDNI.Text,
+                                            nmrcEdad.Value,
+                                            BuscarSoftwares(),
+                                            BuscarPerifericos(),
+                                            BuscarJuegos(),
+                                            BuscarTipoPuesto()
+                                            ))) 
+            {
+                Close();
+            }
         }
 
         private List<string> BuscarSoftwares() 

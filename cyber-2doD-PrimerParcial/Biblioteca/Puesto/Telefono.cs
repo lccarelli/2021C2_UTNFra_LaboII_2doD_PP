@@ -10,6 +10,7 @@ namespace Biblioteca
     {
         private Modelo modeloTelefono;
         private Marca marcaTelefono;
+        private TipoPuesto tipoPuesto;
         private int area;
         private int prefijo;
         private int numero;

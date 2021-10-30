@@ -10,6 +10,7 @@ namespace Biblioteca
         private List<Software> softwares;
         private List<Periferico> perifericos;
         private List<Juego> juegos;
+        private TipoPuesto tipoPuesto;
 
         public List<Software> Softwares { get => softwares; }
         public List<Periferico> Perifericos { get => perifericos; }

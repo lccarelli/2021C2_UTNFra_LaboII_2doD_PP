@@ -6,55 +6,99 @@ namespace Biblioteca
 {
     public abstract class Gestion
     {
-        protected List<Computadora> puestosComputadora;
-        protected List<Telefono> puestosTelefono;
-        protected Queue<Espera> colaEsperaComputadora;
-        protected Queue<Espera> colaEsperaTelefono;
+        private static List<Puesto> listaPuestos;
+        private static Queue<Cliente> colaClientesEspera;
 
-        public List<Computadora> PuestosComputadora { get => puestosComputadora; set => puestosComputadora = value; }
-        public List<Telefono> PuestosTelefono { get => puestosTelefono; set => puestosTelefono = value; }
-        public Queue<Espera> ColaEsperaComputadora { get => colaEsperaComputadora; set => colaEsperaComputadora = value; }
-        public Queue<Espera> ColaEsperaTelefono { get => colaEsperaTelefono; set => colaEsperaTelefono = value; }
 
-        private Gestion()
+
+        static Gestion()
         {
-            this.puestosComputadora = new List<Computadora>();
-            this.puestosTelefono = new List<Telefono>();
-            this.colaEsperaComputadora = new Queue<Espera>();
-            this.colaEsperaTelefono = new Queue<Espera>();
+            listaPuestos = new List<Puesto>();
+            colaClientesEspera = new Queue<Cliente>();
         }
 
-        public Gestion(List<Computadora> puestosComputadora, List<Telefono> puestosTelefono)
+        public static List<Puesto> ListaPuestos 
         {
-            PuestosComputadora = puestosComputadora;
-            PuestosTelefono = puestosTelefono;
-        }
-
-        public static bool operator +(Gestion gestion, Cliente cliente)
-        {
-            //primero tengo que chequear que haya una computadora con las caracteristicas
-            //luego fijarme si esta disponible o no
-            //luego asignarle o ponerlo en espera
-            if (cliente.TipoPuesto == TipoPuesto.COMPUTADORA)
+            get 
             {
-                foreach (Computadora item in gestion.PuestosComputadora)
-                {
-                    if (cliente.computadora == item) // && chequear estado 
-                    {
-                        gestion.colaEsperaComputadora.Enqueue(new Espera(cliente, TipoPuesto.COMPUTADORA));
-                    }
-                }
+                return listaPuestos;
+            }
+        }
 
+        public static Queue<Cliente> ColaClientesEspera 
+        {
+            get 
+            {
+                return colaClientesEspera;
+            }
+        }
+
+        public static void CargarPuestos(Puesto puesto) 
+        {
+            if (puesto is not null) 
+            {
+                listaPuestos.Add(puesto);
+            }
+        }
+
+        /// <summary>
+        /// Ingresa cliente a cola de espera, si este no está repetido 
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns>true -> cliente cargado</returns>
+        /// <returns>false -> cliente duplicado</returns>
+        public static bool ColocarClienteAEspera(Cliente cliente) 
+        {
+            if (cliente is not null) 
+            {
+                colaClientesEspera.Enqueue(cliente);
+                return true;
             }
             return false;
         }
 
-        public static bool operator -(Gestion gestion, Cliente cliente)
+        public static void AsignarPuesto(Puesto puesto) 
         {
-            return false;
+            if (ListarPuestosLibres().Count > 0 && puesto is not null) 
+            {
+                foreach (Puesto item in ListarPuestosLibres())
+                {
+                    if (puesto.TipoPuesto == item.TipoPuesto) 
+                    {
+                        puesto.IniciarSesion();
+                        colaClientesEspera.Dequeue();
+                    }
+                }
+                
+            }
         }
 
+        public static void LiberarPuesto(Puesto puesto) 
+        {
+            if (puesto is not null && puesto.Estado == Estado.EN_USO) 
+            {
+                puesto.FinalizarSesion();
+            }     
+        }
 
+        /// <summary>
+        /// Genera una nueva lista de puestos libres cada vez que se la invoca.
+        /// </summary>
+        /// <returns>Lista de puestos en estado LIBRE</returns>
+        private static  List<Puesto> ListarPuestosLibres() 
+        {
+            List<Puesto> listaPuestosLibres = new List<Puesto>();
+
+            foreach (Puesto item in ListaPuestos)
+            {
+                if (item.Estado is Estado.LIBRE) 
+                {
+                    listaPuestosLibres.Add(item);
+                }
+            }
+
+            return listaPuestosLibres;
+        }
 
 
         public string MostrarComputadorasEnUso() 

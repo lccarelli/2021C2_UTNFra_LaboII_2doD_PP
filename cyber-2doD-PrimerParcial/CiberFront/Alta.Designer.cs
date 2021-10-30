@@ -31,7 +31,15 @@ namespace CiberFront
         {
             this.FormAlta = new ReaLTaiizor.Forms.ForeverForm();
             this.grpBxCabina = new System.Windows.Forms.GroupBox();
+            this.grpBxModelo = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.rBttnATeclado = new System.Windows.Forms.RadioButton();
+            this.rBttnADisco = new System.Windows.Forms.RadioButton();
+            this.grpBxMarca = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.rdBttnElectroLux = new System.Windows.Forms.RadioButton();
+            this.rdBttnAtma = new System.Windows.Forms.RadioButton();
+            this.rdBttnPanasonic = new System.Windows.Forms.RadioButton();
             this.lblNumero = new ReaLTaiizor.Controls.ForeverLabel();
+            this.lblGuion2 = new ReaLTaiizor.Controls.ForeverLabel();
             this.lblGion1 = new ReaLTaiizor.Controls.ForeverLabel();
             this.lblPrefijo = new ReaLTaiizor.Controls.ForeverLabel();
             this.lblArea = new ReaLTaiizor.Controls.ForeverLabel();
@@ -65,23 +73,15 @@ namespace CiberFront
             this.chckBxMicrofono = new System.Windows.Forms.CheckBox();
             this.chckBxCamara = new System.Windows.Forms.CheckBox();
             this.bttnAceptar = new ReaLTaiizor.Controls.ForeverButton();
-            this.grpBxMarca = new ReaLTaiizor.Controls.ThunderGroupBox();
-            this.lblGuion2 = new ReaLTaiizor.Controls.ForeverLabel();
-            this.rdBttnPanasonic = new System.Windows.Forms.RadioButton();
-            this.rdBttnAtma = new System.Windows.Forms.RadioButton();
-            this.rdBttnElectroLux = new System.Windows.Forms.RadioButton();
-            this.grpBxModelo = new ReaLTaiizor.Controls.ThunderGroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.FormAlta.SuspendLayout();
             this.grpBxCabina.SuspendLayout();
+            this.grpBxModelo.SuspendLayout();
+            this.grpBxMarca.SuspendLayout();
             this.grpBxDatosCliente.SuspendLayout();
             this.gBxComputadora.SuspendLayout();
             this.grpBxJuegos.SuspendLayout();
             this.grpBxSoftware.SuspendLayout();
             this.grpBxPerifericos.SuspendLayout();
-            this.grpBxMarca.SuspendLayout();
-            this.grpBxModelo.SuspendLayout();
             this.SuspendLayout();
             // 
             // FormAlta
@@ -127,12 +127,105 @@ namespace CiberFront
             this.grpBxCabina.Controls.Add(this.tggTipoTelefono);
             this.grpBxCabina.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.grpBxCabina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.grpBxCabina.Location = new System.Drawing.Point(503, 357);
+            this.grpBxCabina.Location = new System.Drawing.Point(503, 369);
             this.grpBxCabina.Name = "grpBxCabina";
-            this.grpBxCabina.Size = new System.Drawing.Size(551, 271);
+            this.grpBxCabina.Size = new System.Drawing.Size(551, 244);
             this.grpBxCabina.TabIndex = 12;
             this.grpBxCabina.TabStop = false;
             this.grpBxCabina.Text = "Cabina";
+            // 
+            // grpBxModelo
+            // 
+            this.grpBxModelo.BackColor = System.Drawing.Color.Transparent;
+            this.grpBxModelo.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.grpBxModelo.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.grpBxModelo.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.grpBxModelo.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.grpBxModelo.Controls.Add(this.rBttnATeclado);
+            this.grpBxModelo.Controls.Add(this.rBttnADisco);
+            this.grpBxModelo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.grpBxModelo.Location = new System.Drawing.Point(425, 98);
+            this.grpBxModelo.Name = "grpBxModelo";
+            this.grpBxModelo.Size = new System.Drawing.Size(107, 116);
+            this.grpBxModelo.TabIndex = 17;
+            this.grpBxModelo.Text = "Modelo";
+            // 
+            // rBttnATeclado
+            // 
+            this.rBttnATeclado.AutoSize = true;
+            this.rBttnATeclado.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rBttnATeclado.Location = new System.Drawing.Point(22, 79);
+            this.rBttnATeclado.Name = "rBttnATeclado";
+            this.rBttnATeclado.Size = new System.Drawing.Size(73, 22);
+            this.rBttnATeclado.TabIndex = 1;
+            this.rBttnATeclado.TabStop = true;
+            this.rBttnATeclado.Text = "A Teclado";
+            this.rBttnATeclado.UseVisualStyleBackColor = true;
+            // 
+            // rBttnADisco
+            // 
+            this.rBttnADisco.AutoSize = true;
+            this.rBttnADisco.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rBttnADisco.Location = new System.Drawing.Point(23, 45);
+            this.rBttnADisco.Name = "rBttnADisco";
+            this.rBttnADisco.Size = new System.Drawing.Size(62, 22);
+            this.rBttnADisco.TabIndex = 0;
+            this.rBttnADisco.TabStop = true;
+            this.rBttnADisco.Text = "A Disco";
+            this.rBttnADisco.UseVisualStyleBackColor = true;
+            // 
+            // grpBxMarca
+            // 
+            this.grpBxMarca.BackColor = System.Drawing.Color.Transparent;
+            this.grpBxMarca.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.grpBxMarca.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.grpBxMarca.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.grpBxMarca.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.grpBxMarca.Controls.Add(this.rdBttnElectroLux);
+            this.grpBxMarca.Controls.Add(this.rdBttnAtma);
+            this.grpBxMarca.Controls.Add(this.rdBttnPanasonic);
+            this.grpBxMarca.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.grpBxMarca.Location = new System.Drawing.Point(34, 144);
+            this.grpBxMarca.Name = "grpBxMarca";
+            this.grpBxMarca.Size = new System.Drawing.Size(352, 66);
+            this.grpBxMarca.TabIndex = 15;
+            this.grpBxMarca.Text = "Marca";
+            // 
+            // rdBttnElectroLux
+            // 
+            this.rdBttnElectroLux.AutoSize = true;
+            this.rdBttnElectroLux.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBttnElectroLux.Location = new System.Drawing.Point(254, 33);
+            this.rdBttnElectroLux.Name = "rdBttnElectroLux";
+            this.rdBttnElectroLux.Size = new System.Drawing.Size(80, 22);
+            this.rdBttnElectroLux.TabIndex = 2;
+            this.rdBttnElectroLux.TabStop = true;
+            this.rdBttnElectroLux.Text = "ElectroLux";
+            this.rdBttnElectroLux.UseVisualStyleBackColor = true;
+            // 
+            // rdBttnAtma
+            // 
+            this.rdBttnAtma.AutoSize = true;
+            this.rdBttnAtma.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBttnAtma.Location = new System.Drawing.Point(145, 33);
+            this.rdBttnAtma.Name = "rdBttnAtma";
+            this.rdBttnAtma.Size = new System.Drawing.Size(52, 22);
+            this.rdBttnAtma.TabIndex = 1;
+            this.rdBttnAtma.TabStop = true;
+            this.rdBttnAtma.Text = "Atma";
+            this.rdBttnAtma.UseVisualStyleBackColor = true;
+            // 
+            // rdBttnPanasonic
+            // 
+            this.rdBttnPanasonic.AutoSize = true;
+            this.rdBttnPanasonic.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBttnPanasonic.Location = new System.Drawing.Point(15, 33);
+            this.rdBttnPanasonic.Name = "rdBttnPanasonic";
+            this.rdBttnPanasonic.Size = new System.Drawing.Size(77, 22);
+            this.rdBttnPanasonic.TabIndex = 0;
+            this.rdBttnPanasonic.TabStop = true;
+            this.rdBttnPanasonic.Text = "Panasonic";
+            this.rdBttnPanasonic.UseVisualStyleBackColor = true;
             // 
             // lblNumero
             // 
@@ -140,11 +233,23 @@ namespace CiberFront
             this.lblNumero.BackColor = System.Drawing.Color.Transparent;
             this.lblNumero.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNumero.ForeColor = System.Drawing.Color.LightGray;
-            this.lblNumero.Location = new System.Drawing.Point(270, 27);
+            this.lblNumero.Location = new System.Drawing.Point(270, 53);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(75, 29);
             this.lblNumero.TabIndex = 16;
             this.lblNumero.Text = "Numero";
+            // 
+            // lblGuion2
+            // 
+            this.lblGuion2.AutoSize = true;
+            this.lblGuion2.BackColor = System.Drawing.Color.Transparent;
+            this.lblGuion2.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGuion2.ForeColor = System.Drawing.Color.LightGray;
+            this.lblGuion2.Location = new System.Drawing.Point(240, 88);
+            this.lblGuion2.Name = "lblGuion2";
+            this.lblGuion2.Size = new System.Drawing.Size(22, 29);
+            this.lblGuion2.TabIndex = 15;
+            this.lblGuion2.Text = "-";
             // 
             // lblGion1
             // 
@@ -152,7 +257,7 @@ namespace CiberFront
             this.lblGion1.BackColor = System.Drawing.Color.Transparent;
             this.lblGion1.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblGion1.ForeColor = System.Drawing.Color.LightGray;
-            this.lblGion1.Location = new System.Drawing.Point(122, 61);
+            this.lblGion1.Location = new System.Drawing.Point(122, 87);
             this.lblGion1.Name = "lblGion1";
             this.lblGion1.Size = new System.Drawing.Size(22, 29);
             this.lblGion1.TabIndex = 14;
@@ -164,7 +269,7 @@ namespace CiberFront
             this.lblPrefijo.BackColor = System.Drawing.Color.Transparent;
             this.lblPrefijo.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPrefijo.ForeColor = System.Drawing.Color.LightGray;
-            this.lblPrefijo.Location = new System.Drawing.Point(149, 27);
+            this.lblPrefijo.Location = new System.Drawing.Point(149, 53);
             this.lblPrefijo.Name = "lblPrefijo";
             this.lblPrefijo.Size = new System.Drawing.Size(64, 29);
             this.lblPrefijo.TabIndex = 13;
@@ -176,7 +281,7 @@ namespace CiberFront
             this.lblArea.BackColor = System.Drawing.Color.Transparent;
             this.lblArea.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblArea.ForeColor = System.Drawing.Color.LightGray;
-            this.lblArea.Location = new System.Drawing.Point(34, 27);
+            this.lblArea.Location = new System.Drawing.Point(34, 53);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(51, 29);
             this.lblArea.TabIndex = 9;
@@ -190,7 +295,7 @@ namespace CiberFront
             this.txtBxNumero.FocusOnHover = false;
             this.txtBxNumero.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBxNumero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txtBxNumero.Location = new System.Drawing.Point(269, 61);
+            this.txtBxNumero.Location = new System.Drawing.Point(269, 87);
             this.txtBxNumero.MaxLength = 32767;
             this.txtBxNumero.Multiline = false;
             this.txtBxNumero.Name = "txtBxNumero";
@@ -208,7 +313,7 @@ namespace CiberFront
             this.txtBxPrefijo.FocusOnHover = false;
             this.txtBxPrefijo.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBxPrefijo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txtBxPrefijo.Location = new System.Drawing.Point(152, 61);
+            this.txtBxPrefijo.Location = new System.Drawing.Point(152, 87);
             this.txtBxPrefijo.MaxLength = 32767;
             this.txtBxPrefijo.Multiline = false;
             this.txtBxPrefijo.Name = "txtBxPrefijo";
@@ -226,7 +331,7 @@ namespace CiberFront
             this.txtBxArea.FocusOnHover = false;
             this.txtBxArea.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBxArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txtBxArea.Location = new System.Drawing.Point(34, 61);
+            this.txtBxArea.Location = new System.Drawing.Point(34, 87);
             this.txtBxArea.MaxLength = 32767;
             this.txtBxArea.Multiline = false;
             this.txtBxArea.Name = "txtBxArea";
@@ -267,9 +372,9 @@ namespace CiberFront
             this.grpBxDatosCliente.Controls.Add(this.txtBxApellido);
             this.grpBxDatosCliente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.grpBxDatosCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.grpBxDatosCliente.Location = new System.Drawing.Point(40, 82);
+            this.grpBxDatosCliente.Location = new System.Drawing.Point(40, 62);
             this.grpBxDatosCliente.Name = "grpBxDatosCliente";
-            this.grpBxDatosCliente.Size = new System.Drawing.Size(415, 537);
+            this.grpBxDatosCliente.Size = new System.Drawing.Size(415, 557);
             this.grpBxDatosCliente.TabIndex = 11;
             this.grpBxDatosCliente.TabStop = false;
             this.grpBxDatosCliente.Text = "Datos Cliente";
@@ -402,9 +507,9 @@ namespace CiberFront
             this.gBxComputadora.Controls.Add(this.grpBxPerifericos);
             this.gBxComputadora.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gBxComputadora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.gBxComputadora.Location = new System.Drawing.Point(506, 82);
+            this.gBxComputadora.Location = new System.Drawing.Point(506, 62);
             this.gBxComputadora.Name = "gBxComputadora";
-            this.gBxComputadora.Size = new System.Drawing.Size(551, 269);
+            this.gBxComputadora.Size = new System.Drawing.Size(551, 291);
             this.gBxComputadora.TabIndex = 10;
             this.gBxComputadora.TabStop = false;
             this.gBxComputadora.Text = "Computadora";
@@ -638,111 +743,6 @@ namespace CiberFront
             this.bttnAceptar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.bttnAceptar.Click += new System.EventHandler(this.bttnAceptar_Click);
             // 
-            // grpBxMarca
-            // 
-            this.grpBxMarca.BackColor = System.Drawing.Color.Transparent;
-            this.grpBxMarca.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.grpBxMarca.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.grpBxMarca.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.grpBxMarca.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.grpBxMarca.Controls.Add(this.rdBttnElectroLux);
-            this.grpBxMarca.Controls.Add(this.rdBttnAtma);
-            this.grpBxMarca.Controls.Add(this.rdBttnPanasonic);
-            this.grpBxMarca.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.grpBxMarca.Location = new System.Drawing.Point(34, 106);
-            this.grpBxMarca.Name = "grpBxMarca";
-            this.grpBxMarca.Size = new System.Drawing.Size(352, 66);
-            this.grpBxMarca.TabIndex = 15;
-            this.grpBxMarca.Text = "Marca";
-            // 
-            // lblGuion2
-            // 
-            this.lblGuion2.AutoSize = true;
-            this.lblGuion2.BackColor = System.Drawing.Color.Transparent;
-            this.lblGuion2.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblGuion2.ForeColor = System.Drawing.Color.LightGray;
-            this.lblGuion2.Location = new System.Drawing.Point(240, 62);
-            this.lblGuion2.Name = "lblGuion2";
-            this.lblGuion2.Size = new System.Drawing.Size(22, 29);
-            this.lblGuion2.TabIndex = 15;
-            this.lblGuion2.Text = "-";
-            // 
-            // rdBttnPanasonic
-            // 
-            this.rdBttnPanasonic.AutoSize = true;
-            this.rdBttnPanasonic.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdBttnPanasonic.Location = new System.Drawing.Point(15, 33);
-            this.rdBttnPanasonic.Name = "rdBttnPanasonic";
-            this.rdBttnPanasonic.Size = new System.Drawing.Size(77, 22);
-            this.rdBttnPanasonic.TabIndex = 0;
-            this.rdBttnPanasonic.TabStop = true;
-            this.rdBttnPanasonic.Text = "Panasonic";
-            this.rdBttnPanasonic.UseVisualStyleBackColor = true;
-            // 
-            // rdBttnAtma
-            // 
-            this.rdBttnAtma.AutoSize = true;
-            this.rdBttnAtma.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdBttnAtma.Location = new System.Drawing.Point(145, 33);
-            this.rdBttnAtma.Name = "rdBttnAtma";
-            this.rdBttnAtma.Size = new System.Drawing.Size(52, 22);
-            this.rdBttnAtma.TabIndex = 1;
-            this.rdBttnAtma.TabStop = true;
-            this.rdBttnAtma.Text = "Atma";
-            this.rdBttnAtma.UseVisualStyleBackColor = true;
-            // 
-            // rdBttnElectroLux
-            // 
-            this.rdBttnElectroLux.AutoSize = true;
-            this.rdBttnElectroLux.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdBttnElectroLux.Location = new System.Drawing.Point(254, 33);
-            this.rdBttnElectroLux.Name = "rdBttnElectroLux";
-            this.rdBttnElectroLux.Size = new System.Drawing.Size(80, 22);
-            this.rdBttnElectroLux.TabIndex = 2;
-            this.rdBttnElectroLux.TabStop = true;
-            this.rdBttnElectroLux.Text = "ElectroLux";
-            this.rdBttnElectroLux.UseVisualStyleBackColor = true;
-            // 
-            // grpBxModelo
-            // 
-            this.grpBxModelo.BackColor = System.Drawing.Color.Transparent;
-            this.grpBxModelo.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.grpBxModelo.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.grpBxModelo.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.grpBxModelo.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.grpBxModelo.Controls.Add(this.radioButton2);
-            this.grpBxModelo.Controls.Add(this.radioButton3);
-            this.grpBxModelo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.grpBxModelo.Location = new System.Drawing.Point(34, 183);
-            this.grpBxModelo.Name = "grpBxModelo";
-            this.grpBxModelo.Size = new System.Drawing.Size(352, 66);
-            this.grpBxModelo.TabIndex = 17;
-            this.grpBxModelo.Text = "Modelo";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(145, 33);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(52, 22);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Atma";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.Location = new System.Drawing.Point(15, 33);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(77, 22);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Panasonic";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
             // Alta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -757,6 +757,10 @@ namespace CiberFront
             this.FormAlta.ResumeLayout(false);
             this.grpBxCabina.ResumeLayout(false);
             this.grpBxCabina.PerformLayout();
+            this.grpBxModelo.ResumeLayout(false);
+            this.grpBxModelo.PerformLayout();
+            this.grpBxMarca.ResumeLayout(false);
+            this.grpBxMarca.PerformLayout();
             this.grpBxDatosCliente.ResumeLayout(false);
             this.grpBxDatosCliente.PerformLayout();
             this.gBxComputadora.ResumeLayout(false);
@@ -766,10 +770,6 @@ namespace CiberFront
             this.grpBxSoftware.PerformLayout();
             this.grpBxPerifericos.ResumeLayout(false);
             this.grpBxPerifericos.PerformLayout();
-            this.grpBxMarca.ResumeLayout(false);
-            this.grpBxMarca.PerformLayout();
-            this.grpBxModelo.ResumeLayout(false);
-            this.grpBxModelo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -816,8 +816,8 @@ namespace CiberFront
         private ReaLTaiizor.Controls.ForeverLabel lblGuion2;
         private System.Windows.Forms.RadioButton rdBttnPanasonic;
         private ReaLTaiizor.Controls.ThunderGroupBox grpBxModelo;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rBttnATeclado;
+        private System.Windows.Forms.RadioButton rBttnADisco;
         private System.Windows.Forms.RadioButton rdBttnElectroLux;
         private System.Windows.Forms.RadioButton rdBttnAtma;
     }

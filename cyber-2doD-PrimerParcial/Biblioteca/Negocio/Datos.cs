@@ -22,9 +22,9 @@ namespace Biblioteca
             C10_001
         }
 
-        public List<Computadora> datoListaComputadoras() 
+        public static List<Puesto> GenerarPuestosComputadora() 
         {
-            return new List<Computadora>
+            return new List<Puesto>
             {
                 new Computadora(
                     Indexador.C01_001.ToString(),
