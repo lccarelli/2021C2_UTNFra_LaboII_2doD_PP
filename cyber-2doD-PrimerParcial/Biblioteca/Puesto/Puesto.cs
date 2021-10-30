@@ -7,30 +7,33 @@ namespace Biblioteca
     public abstract class Puesto
     {
         protected string identificaficador;
-        protected Tipo tipo;
-        protected Estado estado;
-        protected Cliente cliente;
-        protected DateTime inicio;
+        protected DateTime horaInicio;
+        protected DateTime horaFin;
+        private TipoPuesto tipoPuesto;
+        private Estado estado;
 
-
-        public enum Estado 
-        {
-            EN_USO,
-            LIBRE
-        }
-
-        public enum Tipo
-        { 
-            COMPUTADORA,
-            CABINA_TELEFONICA
-        }
+        public TipoPuesto TipoPuesto { get => tipoPuesto; set => tipoPuesto = value; }
+        public Estado Estado { get => estado; set => estado = value; }
 
         public Puesto(string identificador) 
         {
             this.identificaficador = identificador;
-            this.estado = Estado.LIBRE; 
         }
 
+        public void IniciarSesion()
+        {
+            this.estado = Estado.EN_USO;
+            this.horaInicio = DateTime.Now;
+        }
+
+        public void FinalizarSesion()
+        {
+            this.estado = Estado.LIBRE;
+            this.horaFin = DateTime.Now;
+        }
+
+
+        public abstract Double CalcularCosto();
 
         public static bool operator ==(Puesto puesto1, Puesto puesto2)
         {
@@ -51,7 +54,7 @@ namespace Biblioteca
             StringBuilder sb = new StringBuilder();
 
             sb.AppendFormat("ID: {0}\r\n", puesto.identificaficador);
-            sb.AppendFormat("TIPO : {0}\r\n", puesto.tipo);
+            //sb.AppendFormat("TIPO : {0}\r\n", puesto.tipo);
             sb.AppendLine("---------------------");
 
             return sb.ToString();
