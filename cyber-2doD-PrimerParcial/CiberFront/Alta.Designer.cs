@@ -59,7 +59,6 @@ namespace CiberFront
             this.gBxComputadora = new System.Windows.Forms.GroupBox();
             this.tgTipoComputadora = new ReaLTaiizor.Controls.ForeverToggle();
             this.grpBxJuegos = new ReaLTaiizor.Controls.ThunderGroupBox();
-            this.chckBxSims = new System.Windows.Forms.CheckBox();
             this.chckBxCounterStrike = new System.Windows.Forms.CheckBox();
             this.chckBxLineage = new System.Windows.Forms.CheckBox();
             this.chckBxDiablo = new System.Windows.Forms.CheckBox();
@@ -539,7 +538,6 @@ namespace CiberFront
             this.grpBxJuegos.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.grpBxJuegos.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.grpBxJuegos.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.grpBxJuegos.Controls.Add(this.chckBxSims);
             this.grpBxJuegos.Controls.Add(this.chckBxCounterStrike);
             this.grpBxJuegos.Controls.Add(this.chckBxLineage);
             this.grpBxJuegos.Controls.Add(this.chckBxDiablo);
@@ -549,19 +547,6 @@ namespace CiberFront
             this.grpBxJuegos.Size = new System.Drawing.Size(147, 170);
             this.grpBxJuegos.TabIndex = 11;
             this.grpBxJuegos.Text = "Juegos";
-            // 
-            // chckBxSims
-            // 
-            this.chckBxSims.AutoSize = true;
-            this.chckBxSims.BackColor = System.Drawing.Color.Transparent;
-            this.chckBxSims.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chckBxSims.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.chckBxSims.Location = new System.Drawing.Point(20, 121);
-            this.chckBxSims.Name = "chckBxSims";
-            this.chckBxSims.Size = new System.Drawing.Size(50, 22);
-            this.chckBxSims.TabIndex = 20;
-            this.chckBxSims.Text = "Sims";
-            this.chckBxSims.UseVisualStyleBackColor = false;
             // 
             // chckBxCounterStrike
             // 
@@ -798,7 +783,6 @@ namespace CiberFront
         private System.Windows.Forms.CheckBox chckBxAuriculares;
         private System.Windows.Forms.CheckBox chckBxMicrofono;
         private System.Windows.Forms.CheckBox chckBxCamara;
-        private System.Windows.Forms.CheckBox chckBxSims;
         private System.Windows.Forms.CheckBox chckBxCounterStrike;
         private System.Windows.Forms.CheckBox chckBxLineage;
         private System.Windows.Forms.CheckBox chckBxDiablo;

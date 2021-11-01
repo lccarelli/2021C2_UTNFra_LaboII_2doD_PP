@@ -22,7 +22,8 @@ namespace CiberFront
                                             BuscarSoftwares(),
                                             BuscarPerifericos(),
                                             BuscarJuegos(),
-                                            BuscarTipoPuesto()
+                                            BuscarTipoPuesto(),
+                                            "SIN_ASIGNAR"
                                             ))) 
             {
                 Close();

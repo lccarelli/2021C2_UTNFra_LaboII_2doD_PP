@@ -10,7 +10,6 @@ namespace Biblioteca
         private List<Software> softwares;
         private List<Periferico> perifericos;
         private List<Juego> juegos;
-        private TipoPuesto tipoPuesto;
 
         public List<Software> Softwares { get => softwares; }
         public List<Periferico> Perifericos { get => perifericos; }
@@ -41,11 +40,14 @@ namespace Biblioteca
             this.juegos = juegos;
         }
 
-
+        public override int CalcularDuracion()
+        {
+            return (int)(horaFin - horaInicio).TotalSeconds;
+        }
 
         public override Double CalcularCosto() 
         {
-            return 0.6;
+            return ((float)Math.Ceiling(CalcularDuracion() / 30F) * FRACCION_MINIMA);
         }
 
         public static bool operator ==(Computadora instalados, Computadora alquiler)
@@ -152,7 +154,25 @@ namespace Biblioteca
             sb.AppendLine("---------------------");
 
             return sb.ToString();
-        } 
+        }
 
+        /// <summary>
+        /// Sobreescribe Equals() usando el método de la clase base Puesto
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True si los identificadores son iguales, false si no</returns>
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        /// <summary>
+        /// Sobreescribe GetHashCode() usando el de la clase base Puesto
+        /// </summary>
+        /// <returns>HashCode generado a partir del identificador</returns>
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

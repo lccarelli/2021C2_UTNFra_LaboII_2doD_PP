@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,17 +11,34 @@ namespace Biblioteca
         private int dni;
         private int edad;
         private TipoPuesto tipoPuesto;
-        public Computadora computadora;
+        private Computadora computadora;
+        public Telefono telefono;
+        private string asignacion;
+
+        private static Dictionary<string, Periferico> mapaPeriferico;
+        private static Dictionary<string, Software> mapaSoftware;
+        private static Dictionary<string, Juego> mapaJuego;
+
+        static Cliente()
+        {
+            mapaSoftware = new Dictionary<string, Software>()
+            { { "Office", Software.OFFICE }, { "Messenger", Software.MESSENGER }, { "Icq", Software.ICQ }, { "Ares", Software.ARES } };
+            mapaPeriferico = new Dictionary<string, Periferico>()
+            { { "Camara", Periferico.CAMARA }, { "Microfono", Periferico.MICROFONO }, { "Auriculares", Periferico.AURICULARES} };
+            mapaJuego = new Dictionary<string, Juego>()
+            { { "Diablo II", Juego.DIABLO }, { "Counter Strike", Juego.COUNTER_STRIKE }, { "Lineage II", Juego.LINEAGE} };
+        }
 
         public Cliente(
-                        string nombre, 
-                        string apellido, 
-                        string strDNI, 
-                        decimal dEdad, 
-                        List<string> softwares, 
-                        List<string> perifericos, 
-                        List<string> juegos, 
-                        TipoPuesto tipoPuesto
+                        string nombre,
+                        string apellido,
+                        string strDNI,
+                        decimal dEdad,
+                        List<string> softwares,
+                        List<string> perifericos,
+                        List<string> juegos,
+                        TipoPuesto tipoPuesto,
+                        string asignacion
             )
         {
             this.nombre = nombre;
@@ -30,6 +47,26 @@ namespace Biblioteca
             this.edad = (int)dEdad;
             this.computadora = new Computadora(ValidarSoftware(softwares), ValidarPeriferico(perifericos), ValidarJuego(juegos));
             this.TipoPuesto = tipoPuesto;
+            this.asignacion = asignacion;
+        }
+
+        public Cliente(
+                string nombre,
+                string apellido,
+                string strDNI,
+                decimal dEdad,
+                Telefono telefono, 
+                TipoPuesto tipoPuesto,
+                string asignacion
+    )
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.dni = validarDNI(strDNI);
+            this.edad = (int)dEdad;
+            this.telefono = telefono;
+            this.TipoPuesto = tipoPuesto;
+            this.asignacion = asignacion;
         }
 
         public string Nombre { get => nombre; set => nombre = value; }
@@ -37,6 +74,8 @@ namespace Biblioteca
         public int Dni { get => dni; set => dni = value; }
         public int Edad { get => edad; set => edad = value; }
         public TipoPuesto TipoPuesto { get => tipoPuesto; set => tipoPuesto = value; }
+        public string Asignacion { get => asignacion; set => asignacion = value; }
+        public Computadora Computadora { get => computadora; }
 
         public static bool operator ==(Cliente cliente1, Cliente cliente2)
         {
@@ -53,49 +92,46 @@ namespace Biblioteca
             return !(cliente1 == cliente2);
         }
 
-        private List<Software> ValidarSoftware(List<string> software) 
+        private static List<Software> ValidarSoftware(List<string> software) 
         {
-            List<Software> lista = new List<Software>();
-            Dictionary<string, Software> mapaSoftware = new Dictionary<string, Software>() 
-            { { "Office", Software.OFFICE }, { "Messenger", Software.MESSENGER }, { "Ares", Software.ARES}, { "Icq", Software.ICQ} };
+            List<Software> listaSoftware = new List<Software>();
+
             if (software is not null) 
             {
                 foreach (string item in software)
                 {
-                    lista.Add(mapaSoftware.GetValueOrDefault(item));
+                    listaSoftware.Add(mapaSoftware.GetValueOrDefault(item));
                 }
             }
-            return lista;
+            return listaSoftware;
         }
 
-        private List<Periferico> ValidarPeriferico(List<string> periferico)
+        private static List<Periferico> ValidarPeriferico(List<string> periferico)
         {
-            List<Periferico> lista = new List<Periferico>();
-            Dictionary<string, Periferico> mapaPeriferico = new Dictionary<string, Periferico>()
-            { { "Camara", Periferico.CAMARA }, { "Microfono", Periferico.MICROFONO }, { "Auriculares", Periferico.AURICULARES} };
+            List<Periferico> listaPeriferico = new List<Periferico>();
+
             if (periferico is not null)
             {
                 foreach (string item in periferico)
                 {
-                    lista.Add(mapaPeriferico.GetValueOrDefault(item));
+                    listaPeriferico.Add(mapaPeriferico.GetValueOrDefault(item));
                 }
             }
-            return lista;
+            return listaPeriferico;
         }
 
-        private List<Juego> ValidarJuego(List<string> juego)
+        private static List<Juego> ValidarJuego(List<string> juego)
         {
-            List<Juego> lista = new List<Juego>();
-            Dictionary<string, Juego> mapaJuego = new Dictionary<string, Juego>()
-            { { "Diablo II", Juego.DIABLO }, { "Counter Strike", Juego.COUNTER_STRIKE }, { "Lineage II", Juego.LINEAGE}, { "Sims", Juego.SIMS} };
+            List<Juego> listaJuegos = new List<Juego>();
+
             if (juego is not null)
             {
                 foreach (string item in juego)
                 {
-                    lista.Add(mapaJuego.GetValueOrDefault(item));
+                    listaJuegos.Add(mapaJuego.GetValueOrDefault(item));
                 }
             }
-            return lista;
+            return listaJuegos;
         }
 
 
@@ -107,8 +143,23 @@ namespace Biblioteca
         public static string Mostrar(Cliente cliente) 
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0} {1}", cliente.Apellido, cliente.Nombre);
+            sb.AppendFormat("{0}, {1} -> Puesto: {2}", cliente.Apellido, cliente.Nombre, cliente.TipoPuesto);
             return sb.ToString();
+        }
+
+        public override bool Equals(Object obj)
+        {
+            Cliente cliente = obj as Cliente;
+            return cliente != null && this == cliente;
+        }
+
+        /// <summary>
+        /// Sobrecarga del metodo GetHashCode()
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return asignacion.GetHashCode();
         }
     }
 }
