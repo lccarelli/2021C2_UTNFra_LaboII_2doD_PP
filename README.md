@@ -4,16 +4,20 @@
 [Enunciado del parcial](https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/evaluaciones/parciales/2d-primer-parcial/)
 
 ## Sobre mí
-Le pongo ganas, pero me cuesta un poco asimilar cosas nuevas. Trabajo mucho con javascript donde se puede hacer cualquier cosa en cualquier lado, entonces me cuestan un poco más los lenguajes más serios. No pude meterle ni el tiempo ni las ganas que la materia se merece. Pero para el recuperatorio voy llegar con lo que me falta.
+Soy Laura, trabajo como programadora backend más que nada, el año pasado decidí ponerme a estudiar, para entender mejor lo que hacía. Gracias a la cuarentena pude tener el tiempo para poder cursar (antes viajaba por trabajo cada 15 dias, y me era imposible poder hacer algo asi). Me gusta mucho cursar las materias de progranación que se propone en la carrera, y me suma un monton todas las herramientas que aprendemos en cada clase. Me pasa que este programa me está llevando más tiempo del que cuento para poder terminarlo para el recuperatorio, pero igualmente voy a seguir programandolo.
 
 ## Resumen
-Se me está haciendo dificil decidir en que capa deberia hacer cada cosa, pude hacer las clases mas puntuales como computadora, pero las clases que deberian ser las que articulan, las empece a escribir, pero me encontre con el problema de que no termino de decidirme quien debería tener la obligacion de cada accion.
+El programa solo puede:
+- Crear un cliente para puesto computadora.
+- Asignar un puesto computadora.
+- Mostrar los valores del costo del servicio.
+Telefono se encuentra en construccion.
 
 ## Diagrama de clases
-Aun no se encuentra porque no pude terminarlo, tengo un problema con la jerarquia de clases, me parece que lo encare mal.
+NO
 
 ## Justificación técnica
-Aun en construccion
+NO
 
 ## Propuesta de valor agregado
-Aun en construccion
+NO
