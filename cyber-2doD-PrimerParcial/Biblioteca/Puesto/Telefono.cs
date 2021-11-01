@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Biblioteca
 {
@@ -10,14 +7,12 @@ namespace Biblioteca
     {
         private Modelo modeloTelefono;
         private Marca marcaTelefono;
-        private TipoPuesto tipoPuesto;
         private int area;
         private int prefijo;
         private int numero;
 
         public Telefono(string id) : base(id)
         {
-            this.tipoPuesto = TipoPuesto.TELEFONO;
         }
 
         public Telefono(string id, Modelo modeloTelefono, Marca marcaTelefono, int area, int prefijo, int numero)

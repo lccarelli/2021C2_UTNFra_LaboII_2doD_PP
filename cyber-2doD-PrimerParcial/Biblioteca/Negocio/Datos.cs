@@ -22,9 +22,9 @@ namespace Biblioteca
             C10_001
         }
 
-        public static List<Puesto> GenerarPuestosComputadora() 
+        public static List<Computadora> GenerarPuestosComputadora() 
         {
-            return new List<Puesto>
+            return new List<Computadora>
             {
                 new Computadora(
                     Indexador.C01_001.ToString(),
@@ -34,13 +34,13 @@ namespace Biblioteca
                     ),
                 new Computadora(
                     Indexador.C02_001.ToString(),
-                    new List<Software>(){ Software.ARES },
+                    new List<Software>(){ Software.MESSENGER },
                     new List<Periferico>(){ Periferico.MICROFONO },
-                    new List<Juego>(){ Juego.DIABLO }
+                    new List<Juego>(){ Juego.COUNTER_STRIKE }
                     ),
                 new Computadora(
                     Indexador.C03_001.ToString(),
-                    new List<Software>(){ Software.OFFICE },
+                    new List<Software>(){ Software.ARES },
                     new List<Periferico>(){ Periferico.AURICULARES },
                     new List<Juego>(){ Juego.LINEAGE }
                     ),
@@ -58,7 +58,7 @@ namespace Biblioteca
                     ),
                 new Computadora(
                     Indexador.C06_001.ToString(),
-                    new List<Software>(){ Software.ARES },
+                    new List<Software>(){ Software.OFFICE },
                     new List<Periferico>(){ Periferico.MICROFONO },
                     new List<Juego>(){ Juego.DIABLO }
                     ),
@@ -94,104 +94,125 @@ namespace Biblioteca
             return new List<Cliente>()
             {
                 new Cliente(
+                    "Laura",
+                    "Holmes",
+                    "305678355",
+                    23,
+                    new List<string>(){ "Office"},
+                    new List<string>(){ "Auriculares" },
+                    new List<string>(){ "Lineage II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
+                    ),
+                new Cliente(
                     "Sherlock",
                     "Holmes",
                     "305678345",
                     23,
-                    new List<string>(){ "ARES"}, 
-                    new List<string>(){ "MICROFONO" },
-                    new List<string>(){ "DIABLO" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Office"},
+                    new List<string>(){ "Auriculares" },
+                    new List<string>(){ "Lineage II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     ),
                 new Cliente(
                     "Joan",
                     "Watson",
                     "3265789",
                     21,
-                    new List<string>(){ "OFFICE"}, 
-                    new List<string>(){ "CAMARA" },
-                    new List<string>(){ "LINEAGE" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Office"},
+                    new List<string>(){ "Auriculares" },
+                    new List<string>(){ "Lineage II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     ),
                 new Cliente(
                     "Mycroft",
                     "Holmes",
                     "27568975",
                     20,
-                    new List<string>(){ "MESSENGER"}, 
-                    new List<string>(){ "MICROFONO" },
-                    new List<string>(){ "COUNTER_STRIKE" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Messenger"}, 
+                    new List<string>(){ "Microfono" },
+                    new List<string>(){ "Counter Strike" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     ),
                 new Cliente(
                     "Daria",
                     "Morgendorffer",
                     "204567896",
                     35,
-                    new List<string>(){ "ICQ"}, 
-                    new List<string>(){ "CAMARA" },
-                    new List<string>(){ "LINEAGE" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Icq"}, 
+                    new List<string>(){ "Camara" },
+                    new List<string>(){ "Lineage II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     ),
                 new Cliente( 
                     "Ozzy", 
                     "Osbourne", 
                     "45678987", 
                     25,                    
-                    new List<string>(){ "ARES"}, 
-                    new List<string>(){ "AURICULARES" },
-                    new List<string>(){ "LINEAGE" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Ares"}, 
+                    new List<string>(){ "Camara" },
+                    new List<string>(){ "Diablo II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     ),
                 new Cliente( 
                     "Robert", 
                     "Plant", 
                     "34567876", 
                     27,                     
-                    new List<string>(){ "OFFICE" }, 
-                    new List<string>(){ "CAMARA" },
-                    new List<string>(){ "DIABLO" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Office" }, 
+                    new List<string>(){ "Camara" },
+                    new List<string>(){ "Diablo II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     ),
                 new Cliente( 
                     "Jimmy", 
                     "Page", 
                     "31567345", 
                     28,
-                    new List<string>(){ "OFFICE", "MESSENGER" },
-                    new List<string>(){ "CAMARA" },
-                    new List<string>(){ "DIABLO" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Office", "Messenger" },
+                    new List<string>(){ "Microfono" },
+                    new List<string>(){ "Lineage II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     ),
                 new Cliente( 
                     "John", 
                     "Bonham", 
                     "29457295", 
                     26,
-                    new List<string>(){ "ARES", "MESSENGER" },
-                    new List<string>(){ "CAMARA" },
-                    new List<string>(){ "DIABLO" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Office", "Messenger" },
+                    new List<string>(){ "Microfono" },
+                    new List<string>(){ "Lineage II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     ),
                 new Cliente( 
                     "John Paul", 
                     "Jones", 
                     "34567153", 
                     22,
-                    new List<string>(){ "ARES", "MESSENGER" },
-                    new List<string>(){ "CAMARA" },
-                    new List<string>(){ "DIABLO" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Office", "Messenger" },
+                    new List<string>(){ "Microfono" },
+                    new List<string>(){ "Lineage II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                      ),
                 new Cliente( 
                     "Phil", 
                     "Collins", 
                     "35916836", 
                     21,
-                    new List<string>(){ "OFFICE", "MESSENGER" },
-                    new List<string>(){ "CAMARA", "MICROFONO" },
-                    new List<string>(){ "DIABLO", "LINEAGE" },
-                    TipoPuesto.COMPUTADORA
+                    new List<string>(){ "Office", "Messenger" },
+                    new List<string>(){ "Microfono" },
+                    new List<string>(){ "Lineage II" },
+                    TipoPuesto.COMPUTADORA,
+                    "SIN_ASIGNACION"
                     )
             };
         }

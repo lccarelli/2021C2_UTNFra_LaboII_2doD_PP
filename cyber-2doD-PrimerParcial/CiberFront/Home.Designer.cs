@@ -31,27 +31,35 @@ namespace CiberFront
         {
             this.lstBoxEsperaComputadora = new System.Windows.Forms.ListBox();
             this.gBxComputadoras = new System.Windows.Forms.GroupBox();
-            this.thunderGroupBox8 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C10_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C10_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.thunderGroupBox9 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C05_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C05_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.thunderGroupBox6 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C09_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C09_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.thunderGroupBox7 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C04_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C04_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.thunderGroupBox4 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C08_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C08_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.thunderGroupBox5 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C03_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C03_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.thunderGroupBox2 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C07_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C07_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.thunderGroupBox1 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C06_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C06_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.thunderGroupBox3 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.puesto_C02_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
+            this.C02_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.puesto_C01_001 = new ReaLTaiizor.Controls.ThunderGroupBox();
-            this.poisonButton1 = new ReaLTaiizor.Controls.PoisonButton();
-            this.lblTime = new System.Windows.Forms.Label();
+            this.C01_001 = new ReaLTaiizor.Controls.PoisonButton();
             this.lblPuesto_C01_001 = new System.Windows.Forms.Label();
             this.bttnAlta = new ReaLTaiizor.Controls.ForeverButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -62,15 +70,15 @@ namespace CiberFront
             this.thunderGroupBox19 = new ReaLTaiizor.Controls.ThunderGroupBox();
             this.bttnAsignarPuesto = new ReaLTaiizor.Controls.ForeverButton();
             this.gBxComputadoras.SuspendLayout();
-            this.thunderGroupBox8.SuspendLayout();
-            this.thunderGroupBox9.SuspendLayout();
-            this.thunderGroupBox6.SuspendLayout();
-            this.thunderGroupBox7.SuspendLayout();
-            this.thunderGroupBox4.SuspendLayout();
-            this.thunderGroupBox5.SuspendLayout();
-            this.thunderGroupBox2.SuspendLayout();
-            this.thunderGroupBox1.SuspendLayout();
-            this.thunderGroupBox3.SuspendLayout();
+            this.puesto_C10_001.SuspendLayout();
+            this.puesto_C05_001.SuspendLayout();
+            this.puesto_C09_001.SuspendLayout();
+            this.puesto_C04_001.SuspendLayout();
+            this.puesto_C08_001.SuspendLayout();
+            this.puesto_C03_001.SuspendLayout();
+            this.puesto_C07_001.SuspendLayout();
+            this.puesto_C06_001.SuspendLayout();
+            this.puesto_C02_001.SuspendLayout();
             this.puesto_C01_001.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -89,15 +97,15 @@ namespace CiberFront
             // 
             // gBxComputadoras
             // 
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox8);
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox9);
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox6);
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox7);
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox4);
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox5);
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox2);
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox1);
-            this.gBxComputadoras.Controls.Add(this.thunderGroupBox3);
+            this.gBxComputadoras.Controls.Add(this.puesto_C10_001);
+            this.gBxComputadoras.Controls.Add(this.puesto_C05_001);
+            this.gBxComputadoras.Controls.Add(this.puesto_C09_001);
+            this.gBxComputadoras.Controls.Add(this.puesto_C04_001);
+            this.gBxComputadoras.Controls.Add(this.puesto_C08_001);
+            this.gBxComputadoras.Controls.Add(this.puesto_C03_001);
+            this.gBxComputadoras.Controls.Add(this.puesto_C07_001);
+            this.gBxComputadoras.Controls.Add(this.puesto_C06_001);
+            this.gBxComputadoras.Controls.Add(this.puesto_C02_001);
             this.gBxComputadoras.Controls.Add(this.puesto_C01_001);
             this.gBxComputadoras.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gBxComputadoras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
@@ -108,20 +116,30 @@ namespace CiberFront
             this.gBxComputadoras.TabStop = false;
             this.gBxComputadoras.Text = "Puestos Computadoras";
             // 
-            // thunderGroupBox8
+            // puesto_C10_001
             // 
-            this.thunderGroupBox8.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox8.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox8.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox8.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox8.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox8.Controls.Add(this.label8);
-            this.thunderGroupBox8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox8.Location = new System.Drawing.Point(390, 356);
-            this.thunderGroupBox8.Name = "thunderGroupBox8";
-            this.thunderGroupBox8.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox8.TabIndex = 16;
-            this.thunderGroupBox8.Text = "C01_001";
+            this.puesto_C10_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C10_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C10_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C10_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C10_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C10_001.Controls.Add(this.C10_001);
+            this.puesto_C10_001.Controls.Add(this.label8);
+            this.puesto_C10_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C10_001.Location = new System.Drawing.Point(390, 356);
+            this.puesto_C10_001.Name = "puesto_C10_001";
+            this.puesto_C10_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C10_001.TabIndex = 16;
+            this.puesto_C10_001.Text = "C10_001";
+            // 
+            // C10_001
+            // 
+            this.C10_001.Location = new System.Drawing.Point(238, 34);
+            this.C10_001.Name = "C10_001";
+            this.C10_001.Size = new System.Drawing.Size(43, 23);
+            this.C10_001.TabIndex = 17;
+            this.C10_001.Text = "Cerrar";
+            this.C10_001.UseSelectable = true;
             // 
             // label8
             // 
@@ -132,20 +150,30 @@ namespace CiberFront
             this.label8.TabIndex = 0;
             this.label8.Text = "label8";
             // 
-            // thunderGroupBox9
+            // puesto_C05_001
             // 
-            this.thunderGroupBox9.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox9.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox9.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox9.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox9.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox9.Controls.Add(this.label9);
-            this.thunderGroupBox9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox9.Location = new System.Drawing.Point(38, 360);
-            this.thunderGroupBox9.Name = "thunderGroupBox9";
-            this.thunderGroupBox9.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox9.TabIndex = 15;
-            this.thunderGroupBox9.Text = "C01_001";
+            this.puesto_C05_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C05_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C05_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C05_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C05_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C05_001.Controls.Add(this.C05_001);
+            this.puesto_C05_001.Controls.Add(this.label9);
+            this.puesto_C05_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C05_001.Location = new System.Drawing.Point(38, 360);
+            this.puesto_C05_001.Name = "puesto_C05_001";
+            this.puesto_C05_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C05_001.TabIndex = 15;
+            this.puesto_C05_001.Text = "C05_001";
+            // 
+            // C05_001
+            // 
+            this.C05_001.Location = new System.Drawing.Point(237, 36);
+            this.C05_001.Name = "C05_001";
+            this.C05_001.Size = new System.Drawing.Size(43, 23);
+            this.C05_001.TabIndex = 17;
+            this.C05_001.Text = "Cerrar";
+            this.C05_001.UseSelectable = true;
             // 
             // label9
             // 
@@ -156,20 +184,30 @@ namespace CiberFront
             this.label9.TabIndex = 0;
             this.label9.Text = "label1";
             // 
-            // thunderGroupBox6
+            // puesto_C09_001
             // 
-            this.thunderGroupBox6.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox6.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox6.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox6.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox6.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox6.Controls.Add(this.label6);
-            this.thunderGroupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox6.Location = new System.Drawing.Point(390, 276);
-            this.thunderGroupBox6.Name = "thunderGroupBox6";
-            this.thunderGroupBox6.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox6.TabIndex = 14;
-            this.thunderGroupBox6.Text = "C01_001";
+            this.puesto_C09_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C09_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C09_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C09_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C09_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C09_001.Controls.Add(this.C09_001);
+            this.puesto_C09_001.Controls.Add(this.label6);
+            this.puesto_C09_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C09_001.Location = new System.Drawing.Point(390, 276);
+            this.puesto_C09_001.Name = "puesto_C09_001";
+            this.puesto_C09_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C09_001.TabIndex = 14;
+            this.puesto_C09_001.Text = "C09_001";
+            // 
+            // C09_001
+            // 
+            this.C09_001.Location = new System.Drawing.Point(238, 34);
+            this.C09_001.Name = "C09_001";
+            this.C09_001.Size = new System.Drawing.Size(43, 23);
+            this.C09_001.TabIndex = 17;
+            this.C09_001.Text = "Cerrar";
+            this.C09_001.UseSelectable = true;
             // 
             // label6
             // 
@@ -180,20 +218,30 @@ namespace CiberFront
             this.label6.TabIndex = 0;
             this.label6.Text = "label6";
             // 
-            // thunderGroupBox7
+            // puesto_C04_001
             // 
-            this.thunderGroupBox7.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox7.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox7.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox7.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox7.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox7.Controls.Add(this.label7);
-            this.thunderGroupBox7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox7.Location = new System.Drawing.Point(38, 280);
-            this.thunderGroupBox7.Name = "thunderGroupBox7";
-            this.thunderGroupBox7.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox7.TabIndex = 13;
-            this.thunderGroupBox7.Text = "C01_001";
+            this.puesto_C04_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C04_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C04_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C04_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C04_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C04_001.Controls.Add(this.C04_001);
+            this.puesto_C04_001.Controls.Add(this.label7);
+            this.puesto_C04_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C04_001.Location = new System.Drawing.Point(38, 280);
+            this.puesto_C04_001.Name = "puesto_C04_001";
+            this.puesto_C04_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C04_001.TabIndex = 13;
+            this.puesto_C04_001.Text = "C04_001";
+            // 
+            // C04_001
+            // 
+            this.C04_001.Location = new System.Drawing.Point(237, 36);
+            this.C04_001.Name = "C04_001";
+            this.C04_001.Size = new System.Drawing.Size(43, 23);
+            this.C04_001.TabIndex = 17;
+            this.C04_001.Text = "Cerrar";
+            this.C04_001.UseSelectable = true;
             // 
             // label7
             // 
@@ -204,20 +252,30 @@ namespace CiberFront
             this.label7.TabIndex = 0;
             this.label7.Text = "label1";
             // 
-            // thunderGroupBox4
+            // puesto_C08_001
             // 
-            this.thunderGroupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox4.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox4.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox4.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox4.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox4.Controls.Add(this.label4);
-            this.thunderGroupBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox4.Location = new System.Drawing.Point(390, 196);
-            this.thunderGroupBox4.Name = "thunderGroupBox4";
-            this.thunderGroupBox4.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox4.TabIndex = 14;
-            this.thunderGroupBox4.Text = "C01_001";
+            this.puesto_C08_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C08_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C08_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C08_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C08_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C08_001.Controls.Add(this.C08_001);
+            this.puesto_C08_001.Controls.Add(this.label4);
+            this.puesto_C08_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C08_001.Location = new System.Drawing.Point(390, 196);
+            this.puesto_C08_001.Name = "puesto_C08_001";
+            this.puesto_C08_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C08_001.TabIndex = 14;
+            this.puesto_C08_001.Text = "C08_001";
+            // 
+            // C08_001
+            // 
+            this.C08_001.Location = new System.Drawing.Point(238, 36);
+            this.C08_001.Name = "C08_001";
+            this.C08_001.Size = new System.Drawing.Size(43, 23);
+            this.C08_001.TabIndex = 17;
+            this.C08_001.Text = "Cerrar";
+            this.C08_001.UseSelectable = true;
             // 
             // label4
             // 
@@ -228,20 +286,30 @@ namespace CiberFront
             this.label4.TabIndex = 0;
             this.label4.Text = "label4";
             // 
-            // thunderGroupBox5
+            // puesto_C03_001
             // 
-            this.thunderGroupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox5.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox5.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox5.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox5.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox5.Controls.Add(this.label5);
-            this.thunderGroupBox5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox5.Location = new System.Drawing.Point(38, 200);
-            this.thunderGroupBox5.Name = "thunderGroupBox5";
-            this.thunderGroupBox5.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox5.TabIndex = 13;
-            this.thunderGroupBox5.Text = "C01_001";
+            this.puesto_C03_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C03_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C03_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C03_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C03_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C03_001.Controls.Add(this.C03_001);
+            this.puesto_C03_001.Controls.Add(this.label5);
+            this.puesto_C03_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C03_001.Location = new System.Drawing.Point(38, 200);
+            this.puesto_C03_001.Name = "puesto_C03_001";
+            this.puesto_C03_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C03_001.TabIndex = 13;
+            this.puesto_C03_001.Text = "C03_001";
+            // 
+            // C03_001
+            // 
+            this.C03_001.Location = new System.Drawing.Point(237, 36);
+            this.C03_001.Name = "C03_001";
+            this.C03_001.Size = new System.Drawing.Size(43, 23);
+            this.C03_001.TabIndex = 16;
+            this.C03_001.Text = "Cerrar";
+            this.C03_001.UseSelectable = true;
             // 
             // label5
             // 
@@ -252,20 +320,30 @@ namespace CiberFront
             this.label5.TabIndex = 0;
             this.label5.Text = "label1";
             // 
-            // thunderGroupBox2
+            // puesto_C07_001
             // 
-            this.thunderGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox2.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox2.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox2.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox2.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox2.Controls.Add(this.label2);
-            this.thunderGroupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox2.Location = new System.Drawing.Point(390, 116);
-            this.thunderGroupBox2.Name = "thunderGroupBox2";
-            this.thunderGroupBox2.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox2.TabIndex = 14;
-            this.thunderGroupBox2.Text = "C01_001";
+            this.puesto_C07_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C07_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C07_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C07_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C07_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C07_001.Controls.Add(this.C07_001);
+            this.puesto_C07_001.Controls.Add(this.label2);
+            this.puesto_C07_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C07_001.Location = new System.Drawing.Point(390, 116);
+            this.puesto_C07_001.Name = "puesto_C07_001";
+            this.puesto_C07_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C07_001.TabIndex = 14;
+            this.puesto_C07_001.Text = "C07_001";
+            // 
+            // C07_001
+            // 
+            this.C07_001.Location = new System.Drawing.Point(238, 36);
+            this.C07_001.Name = "C07_001";
+            this.C07_001.Size = new System.Drawing.Size(43, 23);
+            this.C07_001.TabIndex = 17;
+            this.C07_001.Text = "Cerrar";
+            this.C07_001.UseSelectable = true;
             // 
             // label2
             // 
@@ -276,20 +354,30 @@ namespace CiberFront
             this.label2.TabIndex = 0;
             this.label2.Text = "label2";
             // 
-            // thunderGroupBox1
+            // puesto_C06_001
             // 
-            this.thunderGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox1.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox1.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox1.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox1.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox1.Controls.Add(this.label1);
-            this.thunderGroupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox1.Location = new System.Drawing.Point(390, 36);
-            this.thunderGroupBox1.Name = "thunderGroupBox1";
-            this.thunderGroupBox1.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox1.TabIndex = 12;
-            this.thunderGroupBox1.Text = "C01_001";
+            this.puesto_C06_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C06_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C06_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C06_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C06_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C06_001.Controls.Add(this.C06_001);
+            this.puesto_C06_001.Controls.Add(this.label1);
+            this.puesto_C06_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C06_001.Location = new System.Drawing.Point(390, 36);
+            this.puesto_C06_001.Name = "puesto_C06_001";
+            this.puesto_C06_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C06_001.TabIndex = 12;
+            this.puesto_C06_001.Text = "C06_001";
+            // 
+            // C06_001
+            // 
+            this.C06_001.Location = new System.Drawing.Point(238, 38);
+            this.C06_001.Name = "C06_001";
+            this.C06_001.Size = new System.Drawing.Size(43, 23);
+            this.C06_001.TabIndex = 17;
+            this.C06_001.Text = "Cerrar";
+            this.C06_001.UseSelectable = true;
             // 
             // label1
             // 
@@ -300,20 +388,30 @@ namespace CiberFront
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // thunderGroupBox3
+            // puesto_C02_001
             // 
-            this.thunderGroupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.thunderGroupBox3.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.thunderGroupBox3.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.thunderGroupBox3.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.thunderGroupBox3.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.thunderGroupBox3.Controls.Add(this.label3);
-            this.thunderGroupBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.thunderGroupBox3.Location = new System.Drawing.Point(38, 120);
-            this.thunderGroupBox3.Name = "thunderGroupBox3";
-            this.thunderGroupBox3.Size = new System.Drawing.Size(297, 74);
-            this.thunderGroupBox3.TabIndex = 13;
-            this.thunderGroupBox3.Text = "C01_001";
+            this.puesto_C02_001.BackColor = System.Drawing.Color.Transparent;
+            this.puesto_C02_001.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.puesto_C02_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.puesto_C02_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.puesto_C02_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.puesto_C02_001.Controls.Add(this.C02_001);
+            this.puesto_C02_001.Controls.Add(this.label3);
+            this.puesto_C02_001.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.puesto_C02_001.Location = new System.Drawing.Point(38, 120);
+            this.puesto_C02_001.Name = "puesto_C02_001";
+            this.puesto_C02_001.Size = new System.Drawing.Size(297, 74);
+            this.puesto_C02_001.TabIndex = 13;
+            this.puesto_C02_001.Text = "C02_001";
+            // 
+            // C02_001
+            // 
+            this.C02_001.Location = new System.Drawing.Point(237, 36);
+            this.C02_001.Name = "C02_001";
+            this.C02_001.Size = new System.Drawing.Size(43, 23);
+            this.C02_001.TabIndex = 15;
+            this.C02_001.Text = "Cerrar";
+            this.C02_001.UseSelectable = true;
             // 
             // label3
             // 
@@ -331,8 +429,7 @@ namespace CiberFront
             this.puesto_C01_001.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.puesto_C01_001.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.puesto_C01_001.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.puesto_C01_001.Controls.Add(this.poisonButton1);
-            this.puesto_C01_001.Controls.Add(this.lblTime);
+            this.puesto_C01_001.Controls.Add(this.C01_001);
             this.puesto_C01_001.Controls.Add(this.lblPuesto_C01_001);
             this.puesto_C01_001.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.puesto_C01_001.Location = new System.Drawing.Point(38, 40);
@@ -341,23 +438,15 @@ namespace CiberFront
             this.puesto_C01_001.TabIndex = 4;
             this.puesto_C01_001.Text = "C01_001";
             // 
-            // poisonButton1
+            // C01_001
             // 
-            this.poisonButton1.Location = new System.Drawing.Point(237, 36);
-            this.poisonButton1.Name = "poisonButton1";
-            this.poisonButton1.Size = new System.Drawing.Size(43, 23);
-            this.poisonButton1.TabIndex = 14;
-            this.poisonButton1.Text = "Ver";
-            this.poisonButton1.UseSelectable = true;
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(140, 36);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(57, 21);
-            this.lblTime.TabIndex = 1;
-            this.lblTime.Text = "label1";
+            this.C01_001.Location = new System.Drawing.Point(237, 36);
+            this.C01_001.Name = "C01_001";
+            this.C01_001.Size = new System.Drawing.Size(43, 23);
+            this.C01_001.TabIndex = 14;
+            this.C01_001.Text = "Cerrar";
+            this.C01_001.UseSelectable = true;
+            this.C01_001.Click += new System.EventHandler(this.bttnCerrar_Click);
             // 
             // lblPuesto_C01_001
             // 
@@ -501,24 +590,24 @@ namespace CiberFront
             this.Activated += new System.EventHandler(this.Home_Activated);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gBxComputadoras.ResumeLayout(false);
-            this.thunderGroupBox8.ResumeLayout(false);
-            this.thunderGroupBox8.PerformLayout();
-            this.thunderGroupBox9.ResumeLayout(false);
-            this.thunderGroupBox9.PerformLayout();
-            this.thunderGroupBox6.ResumeLayout(false);
-            this.thunderGroupBox6.PerformLayout();
-            this.thunderGroupBox7.ResumeLayout(false);
-            this.thunderGroupBox7.PerformLayout();
-            this.thunderGroupBox4.ResumeLayout(false);
-            this.thunderGroupBox4.PerformLayout();
-            this.thunderGroupBox5.ResumeLayout(false);
-            this.thunderGroupBox5.PerformLayout();
-            this.thunderGroupBox2.ResumeLayout(false);
-            this.thunderGroupBox2.PerformLayout();
-            this.thunderGroupBox1.ResumeLayout(false);
-            this.thunderGroupBox1.PerformLayout();
-            this.thunderGroupBox3.ResumeLayout(false);
-            this.thunderGroupBox3.PerformLayout();
+            this.puesto_C10_001.ResumeLayout(false);
+            this.puesto_C10_001.PerformLayout();
+            this.puesto_C05_001.ResumeLayout(false);
+            this.puesto_C05_001.PerformLayout();
+            this.puesto_C09_001.ResumeLayout(false);
+            this.puesto_C09_001.PerformLayout();
+            this.puesto_C04_001.ResumeLayout(false);
+            this.puesto_C04_001.PerformLayout();
+            this.puesto_C08_001.ResumeLayout(false);
+            this.puesto_C08_001.PerformLayout();
+            this.puesto_C03_001.ResumeLayout(false);
+            this.puesto_C03_001.PerformLayout();
+            this.puesto_C07_001.ResumeLayout(false);
+            this.puesto_C07_001.PerformLayout();
+            this.puesto_C06_001.ResumeLayout(false);
+            this.puesto_C06_001.PerformLayout();
+            this.puesto_C02_001.ResumeLayout(false);
+            this.puesto_C02_001.PerformLayout();
             this.puesto_C01_001.ResumeLayout(false);
             this.puesto_C01_001.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -538,26 +627,34 @@ namespace CiberFront
         private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox18;
         private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox19;
         private System.Windows.Forms.Label lblPuesto_C01_001;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox6;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C09_001;
         private System.Windows.Forms.Label label6;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox7;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C04_001;
         private System.Windows.Forms.Label label7;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox4;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C08_001;
         private System.Windows.Forms.Label label4;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox5;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C03_001;
         private System.Windows.Forms.Label label5;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox2;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C07_001;
         private System.Windows.Forms.Label label2;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox1;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C06_001;
         private System.Windows.Forms.Label label1;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox3;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C02_001;
         private System.Windows.Forms.Label label3;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox8;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C10_001;
         private System.Windows.Forms.Label label8;
-        private ReaLTaiizor.Controls.ThunderGroupBox thunderGroupBox9;
+        private ReaLTaiizor.Controls.ThunderGroupBox puesto_C05_001;
         private System.Windows.Forms.Label label9;
-        private ReaLTaiizor.Controls.PoisonButton poisonButton1;
-        private System.Windows.Forms.Label lblTime;
+        private ReaLTaiizor.Controls.PoisonButton C01_001;
         private ReaLTaiizor.Controls.ForeverButton bttnAsignarPuesto;
+        private ReaLTaiizor.Controls.PoisonButton C02_001;
+        private ReaLTaiizor.Controls.PoisonButton C10_001;
+        private ReaLTaiizor.Controls.PoisonButton C05_001;
+        private ReaLTaiizor.Controls.PoisonButton C09_001;
+        private ReaLTaiizor.Controls.PoisonButton C04_001;
+        private ReaLTaiizor.Controls.PoisonButton C08_001;
+        private ReaLTaiizor.Controls.PoisonButton C03_001;
+        private ReaLTaiizor.Controls.PoisonButton C07_001;
+        private ReaLTaiizor.Controls.PoisonButton C06_001;
     }
 }

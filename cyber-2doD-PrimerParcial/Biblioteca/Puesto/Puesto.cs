@@ -9,16 +9,20 @@ namespace Biblioteca
         protected string identificaficador;
         protected DateTime horaInicio;
         protected DateTime horaFin;
-        private TipoPuesto tipoPuesto;
-        private Estado estado;
+        protected TipoPuesto tipoPuesto;
+        protected Estado estado;
 
         public TipoPuesto TipoPuesto { get => tipoPuesto; set => tipoPuesto = value; }
         public Estado Estado { get => estado; set => estado = value; }
+        public DateTime HoraInicio { get => horaInicio; set => horaInicio = value; }
+        public DateTime HoraFin { get => horaFin; set => horaFin = value; }
+        public string Identificaficador { get => identificaficador; set => identificaficador = value; }
 
-        public Puesto(string identificador) 
+        public Puesto(string identificador, string identificaficador = null)
         {
             this.identificaficador = identificador;
             this.estado = Estado.LIBRE;
+            this.identificaficador = identificaficador;
         }
 
         public void IniciarSesion()
@@ -46,6 +50,18 @@ namespace Biblioteca
             return !(puesto1 == puesto2);
         }
 
+        public static bool ValidarPuesto(Cliente cliente, Computadora computadora) 
+        {
+            if (cliente is not null && computadora is not null) 
+            {
+                if (cliente.Computadora == computadora) 
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         /// <summary>
         /// Convierte un objeto de tipo Espacio a tipo string
         /// </summary>
@@ -68,6 +84,21 @@ namespace Biblioteca
         public virtual string Mostrar()
         {
             return (string)this;
+        }
+
+        public override bool Equals(Object obj)
+        {
+            Puesto puesto = obj as Puesto;
+            return puesto != null && this == puesto;
+        }
+
+        /// <summary>
+        /// Sobrecarga del metodo GetHashCode()
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return identificaficador.GetHashCode();
         }
 
     }

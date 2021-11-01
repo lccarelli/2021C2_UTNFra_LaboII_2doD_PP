@@ -7,31 +7,16 @@ namespace Biblioteca
     public abstract class Gestion
     {
         private static List<Puesto> listaPuestos;
+        private static List<Computadora> puestosComputadora;
         private static Queue<Cliente> colaClientesEspera;
-        private static List<Puesto> listaPuestosLibre;
 
         static Gestion()
         {
             listaPuestos = new List<Puesto>();
             colaClientesEspera = new Queue<Cliente>();
-            listaPuestosLibre = new List<Puesto>();
+            puestosComputadora = new List<Computadora>();
         }
 
-        public static List<Puesto> ListaPuestos 
-        {
-            get 
-            {
-                return listaPuestos;
-            }
-        }
-
-        public static List<Puesto> ListaPuestosLibres
-        {
-            get 
-            {
-                return ListaPuestosLibres;
-            }
-        }
 
         public static Queue<Cliente> ColaClientesEspera 
         {
@@ -41,20 +26,23 @@ namespace Biblioteca
             }
         }
 
-        public static void CargarPuestos(Puesto puesto) 
+        public static List<Computadora> PuestosComputadora { get => puestosComputadora; }
+
+
+        public static void CargarPuestos(Computadora computadora) 
         {
-            if (puesto is not null) 
+            if (computadora is not null) 
             {
-                listaPuestos.Add(puesto);
+                puestosComputadora.Add(computadora);
             }
         }
 
         /// <summary>
-        /// Ingresa cliente a cola de espera, si este no está repetido 
+        /// Ingresa cliente a cola de espera
         /// </summary>
         /// <param name="cliente"></param>
-        /// <returns>true -> cliente cargado</returns>
-        /// <returns>false -> cliente duplicado</returns>
+        /// <returns>true</returns>
+        /// <returns>false</returns>
         public static bool ColocarClienteAEspera(Cliente cliente) 
         {
             if (cliente is not null) 
@@ -65,47 +53,79 @@ namespace Biblioteca
             return false;
         }
 
-        public static void AsignarPuesto() 
+        public static bool AsignarPuesto() 
         {
-            if (ListarPuestosLibres().Count > 0) 
+            if (ListarPuestosLibresComputadora().Count > 0) 
             {
+
                 Cliente cliente = colaClientesEspera.Peek();
 
-                foreach (Puesto item in ListarPuestosLibres())
+                if (cliente.TipoPuesto == TipoPuesto.COMPUTADORA) 
                 {
-                    if (cliente.TipoPuesto == item.TipoPuesto) 
+                    foreach (Computadora item in ListarPuestosLibresComputadora())
                     {
-                        item.IniciarSesion();
-                        colaClientesEspera.Dequeue();
+                        if (Puesto.ValidarPuesto(cliente, item))
+                        {
+                            cliente.Asignacion = item.Identificaficador;
+                            item.IniciarSesion();
+                            colaClientesEspera.Dequeue();
+                            return true;
+                        }
+                        else 
+                        {
+                            colaClientesEspera.Dequeue();
+                            colaClientesEspera.Enqueue(cliente);
+                            break;
+                        }
                     }
                 }
-                
             }
+            return false;
         }
 
-        public static void LiberarPuesto(Puesto puesto) 
+        public static Puesto LiberarPuesto(string identificador) 
         {
-            if (puesto is not null && puesto.Estado == Estado.EN_USO) 
+            foreach (Computadora item in puestosComputadora)
             {
-                puesto.FinalizarSesion();
-            }     
+                if (item.Identificaficador == identificador && item.Estado == Estado.EN_USO) 
+                {
+                    item.FinalizarSesion();
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public static string MostrarFactura(Puesto puesto) 
+        {
+            StringBuilder sb = new StringBuilder();
+            if (puesto is not null) 
+            {
+                sb.AppendLine($"Inicio -> {puesto.HoraInicio}");
+                sb.AppendLine($"Fin -> {puesto.HoraFin}");
+                sb.AppendLine($"Costo -> {puesto.CalcularCosto()}");
+            }
+
+            return sb.ToString();
         }
 
         /// <summary>
         /// Genera una nueva lista de puestos libres cada vez que se la invoca.
         /// </summary>
         /// <returns>Lista de puestos en estado LIBRE</returns>
-        private static  List<Puesto> ListarPuestosLibres() 
-        { 
-            foreach (Puesto item in ListaPuestos)
+        private static List<Computadora> ListarPuestosLibresComputadora() 
+        {
+            List<Computadora> listaPuestosLibreComputadora = new List<Computadora>();
+
+            foreach (Computadora item in PuestosComputadora) 
             {
-                if (item.Estado is Estado.LIBRE) 
+                if (item.Estado == Estado.LIBRE) 
                 {
-                    listaPuestosLibre.Add(item);
+                    listaPuestosLibreComputadora.Add(item);
                 }
             }
 
-            return listaPuestosLibre;
+            return listaPuestosLibreComputadora;
         }
 
 
